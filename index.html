@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>hello</h1>
-</body>
+    <link rel="stylesheet" href="/styles/index.css">
+<!-- <script defer src="http://localhost:4000/socket.io/socket.io.js"></script>
+<script defer src="/public/js/client.js"></script> -->
+<!-- <script data-main="scripts/main" src="scripts/require.js"></script> -->
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="title">
+          <img src="/icons/chat.png" alt="" width="35rem">
+          <h1>random chat</h1>
+        </div>
+        <button>
+            <img src="/icons/hamburger.png" alt="" width="15rem">
+        </button>
+      </header>
+      <div class="container">
+        <div class="users-window">
+            <div class="users-head">
+                <h3>people</h3>
+                <h4 class="users-count">3</h4>
+            </div>
+            <div class="users-list">
+               
+            </div>
+        </div>
+        <div class="chat-window">
+            <div class="chats">
+             
+            </div>
+            <div class="user-input">
+                <input type="text" placeholder="type your message.." name="" id="user-msg">
+                <button id="user-send">send</button>
+            </div>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
 <script src="/socket.io/socket.io.js"></script>
-<script src="/public/js/client.js"></script>
+<script src="/js/client.js"></script>

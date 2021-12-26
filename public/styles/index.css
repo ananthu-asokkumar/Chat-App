@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* ::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: hidden;
+  border-radius: 0.7rem;
+}
+
+main header {
+  background-color: #7f7fce;
+  color: white;
+  padding: 0.5rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main header div.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main header div.title h1 {
+  margin-left: 1rem;
+}
+
+main header button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+
+main div.container {
+  background-color: #a7a6a6;
+  padding: 1.3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+main div.container div.users-window {
+  width: 20rem;
+  color: white;
+  background-color: #686666;
+  padding: 1rem 1.4rem;
+  border-radius: .7rem;
+  margin-right: 1rem;
+}
+
+main div.container div.users-window div.users-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+main div.container div.users-window div.users-head h4 {
+  background-color: #a7a6a6;
+  padding: 0 .5rem;
+  border-radius: .9rem;
+}
+
+main div.container div.users-window div.users-list p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+main div.container div.chat-window {
+  width: 100%;
+  border-radius: .7rem;
+  background-color: #686666;
+}
+
+main div.container div.chat-window div.chats {
+  min-height: 65vh;
+  padding: 1.3rem;
+  overflow-y: auto;
+}
+
+main div.container div.chat-window div.chats div.user-join {
+  font-size: .9rem;
+  color: #686666;
+  background-color: white;
+  border-radius: 7rem;
+  padding: .5rem 1.3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+main div.container div.chat-window div.chats div.message {
+  color: #686666;
+  background-color: white;
+  padding: .4rem 1rem;
+  max-width: 35rem;
+  margin-bottom: 1rem;
+  border-radius: .7rem 4rem 4rem .7rem;
+}
+
+main div.container div.chat-window div.chats div.message p {
+  font-size: 16px;
+}
+
+main div.container div.chat-window div.chats div.outgoing {
+  margin-left: auto;
+  color: white;
+  background-color: #7f7fce;
+  border-radius: 4rem .7rem .7rem 4rem;
+  text-align: right;
+}
+
+main div.container div.chat-window div.user-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem;
+}
+
+main div.container div.chat-window div.user-input input {
+  font-size: 16px;
+  background-color: white;
+  padding: 1rem;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding-left: 2rem;
+  border-radius: 4rem 0 0 4rem;
+}
+
+main div.container div.chat-window div.user-input button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 1rem;
+  border: none;
+  outline: none;
+  letter-spacing: .5px;
+  color: white;
+  background-color: #7f7fce;
+  border-radius: 0 4rem 4rem 0;
+}
+/*# sourceMappingURL=index.css.map */

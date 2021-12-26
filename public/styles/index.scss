@@ -1,0 +1,142 @@
+$light-blue: rgb(127, 127, 206);
+$light-grey: rgb(167, 166, 166);
+$drak-grey: rgb(104, 102, 102);
+$white: white;
+$fsize: 16px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  ::-webkit-scrollbar{
+    display: none;
+  }
+}
+@mixin flexing($fd, $jc, $ai) {
+  display: flex;
+  flex-direction: $fd;
+  align-items: $ai;
+  justify-content: $jc;
+}
+
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  overflow: hidden;
+  border-radius: 0.7rem;
+  header {
+    background-color: $light-blue;
+    color: white;
+    padding: 0.5rem 1rem;
+    @include flexing(row, space-between, center);
+    div.title {
+      @include flexing(row, flex-start, center);
+      h1 {
+        margin-left: 1rem;
+      }
+    }
+    button {
+      background-color: transparent;
+      border: none;
+      color: white;
+      outline: none;
+    }
+  }
+  div.container{
+      background-color: $light-grey;
+      padding: 1.3rem;
+    @include flexing(row,flex-start ,stretch );
+      div.users-window{
+          width: 20rem;
+          color: $white;
+          background-color: $drak-grey;
+          padding: 1rem 1.4rem;
+          border-radius: .7rem;
+          margin-right: 1rem;
+          div.users-head{
+              @include flexing(row,space-between ,center );
+              margin-bottom: 1rem;
+              h4{
+                  background-color: $light-grey;
+                  padding: 0 .5rem;
+                  border-radius:.9rem ;
+              }
+          }
+          div.users-list p{
+            font-size: $fsize;
+            font-weight: 500;
+            margin-bottom: 1rem;
+          }
+      }
+      div.chat-window{
+          width: 100%;
+          border-radius: .7rem;
+          background-color:$drak-grey ;
+          div.chats {
+              min-height: 65vh;
+              padding: 1.3rem;
+              overflow-y: auto;
+              div.user-join{
+                  font-size: .9rem;
+                  color: $drak-grey;
+                  background-color:$white ;
+                  border-radius: 7rem;
+                  padding: .5rem 1.3rem;
+                  margin: 0 auto;
+                  margin-bottom: 1rem;
+              }
+              div.message{
+                  color: $drak-grey;
+                  background-color: white;
+                  padding: .4rem 1rem;
+                  max-width: 35rem;
+                  margin-bottom: 1rem;
+                  border-radius: .7rem 4rem 4rem .7rem;
+                  p{
+                      font-size: $fsize;
+                  }
+              }
+              div.outgoing{
+                  margin-left: auto;
+                  color: $white;
+                  background-color: $light-blue;
+                  border-radius: 4rem .7rem .7rem 4rem;
+                  text-align: right;
+              }
+          }
+          div.user-input{
+              @include flexing(row,space-between ,stretch );
+              padding: 1rem;
+              input{
+                  font-size: $fsize;
+                  background-color: $white;
+                  padding: 1rem;
+                  outline: none;
+                  border: none;
+                  width: 100%;
+                  padding-left: 2rem;
+                  border-radius: 4rem 0 0 4rem;
+              }
+              input::placeholder{
+                //   padding-left: 1rem;
+                  
+              }
+              button{
+                  font-size: $fsize;
+                  font-weight: 500;
+                  padding:1rem;
+                  border: none;
+                  outline: none;
+                  letter-spacing: .5px;
+                  color: white;
+                  background-color: $light-blue;
+                  border-radius:0 4rem 4rem 0 ;
+
+              }
+          }
+      }
+
+  }
+}
